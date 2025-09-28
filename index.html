@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Kartik Narwal Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+  /* Global theme colors */
+  body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+  }
+
+  /* Navbar */
+  .navbar {
+    background-color: #000 !important;
+  }
+
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    transition: color 0.3s;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #0EA5E9 !important; /* Electric Blue on hover */
+  }
+
+  /* Buttons */
+  .btn-primary {
+    background-color: #0EA5E9;
+    border-color: #0EA5E9;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .btn-primary:hover {
+    background-color: #0284c7; /* Darker blue hover */
+    border-color: #0284c7;
+  }
+
+  /* Section Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+
+  .big, .big-2, .big-4 {
+    color: #0EA5E9; /* Accent for big headings */
+  }
+
+  /* Underline decoration */
+  .underline {
+    width: 60px;
+    height: 4px;
+    background-color: #0EA5E9;
+    margin: 10px 0;
+  }
+
+  /* Links */
+  a {
+    color: #0EA5E9;
+    transition: color 0.3s;
+  }
+  a:hover {
+    color: #0284c7; /* Slightly darker on hover */
+  }
+
+  /* Project cards */
+  .resume-wrap {
+    background-color: #111; /* Dark card */
+    border: 1px solid #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .resume-wrap:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.6);
+  }
+  .resume-wrap h2 {
+    color: #0EA5E9;
+  }
+
+  /* Progress bars */
+  .progress-bar {
+    background-color: #0EA5E9 !important;
+  }
+
+   /* Hide default cursor */
+
+
+</style>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Kartik Narwal</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span>
+          Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item">
+              <a href="#home-section" class="nav-link">
+                <span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link">
+                <span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume-section" class="nav-link">
+                <span>Who I Am</span></a>
+            </li>
+             <li class="nav-item">
+              <a href="#projects-section" class="nav-link">
+                <span>Projects</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link">
+                <span>Contact</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#send-message" class="nav-link">
+                <span>Message me</span></a>
+            
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home-section" class="hero">
+      <div class="home-slider  owl-carousel">
+        <div class="slider-item ">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/me.png);">
+                <div class="overlay"></div>
+              </div>
+              <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm
+                    <span>Kartik Narwal</span></h1>
+
+                  <!-- Element to contain animated typing -->
+                  <span id="typing-animation"></span>
+
+                  <script>
+                    // Initialize the typing animation
+                    const typingAnimationElement = document.getElementById('typing-animation');
+
+                    // Create an array of typing text
+                    const typingTexts = ['Software Developer', 'Full Stack Developer', 'GenAI Engineer'];
+
+                    // Create a function to display the typing animation for a given text
+                    function playTypingAnimation(text) {
+                      // Loop through each character and add it to the element
+                      for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => {
+                          typingAnimationElement.textContent += text[i];
+                        }, i * 100); // Decreased delay to speed up the typing animation
+                      }
+
+                      // Once the animation is complete, reset the text and start over
+                      setTimeout(() => {
+                        typingAnimationElement.textContent = '';
+                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                      }, text.length * 100); // Adjusted delay accordingly
+                    }
+
+                    // Start the typing animation loop
+                    playTypingAnimation(typingTexts[0]);
+                  </script><br><br>
+                  <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+                  <!-- <br> -->
+                  <p>
+                    <a href="https://www.instagram.com/narwal._kartik/" class="btn btn-primary py-3 px-4">My Instagram</a>
+                    <a href="https://www.linkedin.com/in/kartik-narwal/" class="btn btn-white btn-outline-white py-3 px-4">My Linkedin</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ftco-blocks-cover-1" data-stellar-background-ratio="0.5" style="background-image: url('images/bg_');">
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="row d-flex align-items-stretch">
+            <!-- <div class="row d-flex"> -->
+            <div class="col-md-6 col-lg-5 d-flex">
+              <div class="img-about img d-flex align-items-stretch">
+                <div class="overlay">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <!-- Details next to profile image -->
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p>
+                          <span class="title-s">Name:
+                          </span>
+                          <span>Kartik Narwal</span></p>
+                        <p>
+                          <span class="title-s">Job Role:
+                          </span>
+                          <span>Software Developer,Full Stack Developer,GeniAi Enginner</span></p>
+                        <p>
+                          <!-- <span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> <p> -->
+                          <span class="title-s">Address:
+                          </span>
+                          <span>Sonipat, Haryana</span></p>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                 <div class="skill-mf">
+  <p class="title-s">Skills</p>
+
+  <div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+    <!-- Frontend -->
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>HTML</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 99%"></div>
+      </div>
+    </div>
+
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>CSS</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 95%"></div>
+      </div>
+    </div>
+
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>Tailwind</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%"></div>
+      </div>
+    </div>
+
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>Bootstrap</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 95%"></div>
+      </div>
+    </div>
+
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>Material UI</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%"></div>
+      </div>
+    </div>
+
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>JavaScript / jQuery</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 95%"></div>
+      </div>
+    </div>
+
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>React</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%"></div>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>Node.js / Express</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 85%"></div>
+      </div>
+    </div>
+
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>MongoDB</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 85%"></div>
+      </div>
+    </div>
+
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>SQL</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%"></div>
+      </div>
+    </div>
+
+    <!-- Tools & DevOps -->
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>Git / GitHub</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%"></div>
+      </div>
+    </div>
+
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>CI/CD</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 85%"></div>
+      </div>
+    </div>
+
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>Cloudinary</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 80%"></div>
+      </div>
+    </div>
+
+    <div class="skill-item" style="flex: 1 1 200px;">
+      <span>Razorpay</span>
+      <div class="progress">
+        <div class="progress-bar" style="width: 80%"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12 heading-section ftco-animate">
+
+                  <h1 class="big">About</h1>
+                  <h2 class="mb-4">About Me</h2>
+                      <p>
+Skilled in developing full-stack web applications using the MERN stack (MongoDB, Express, React, Node.js), with expertise in HTML, CSS, Tailwind, Bootstrap, and JavaScript. Experienced in integrating Cloudinary and Razorpay for media storage and payment solutions. Well-versed in Python, C++, C, and Java, with strong SQL knowledge. Familiar with AI tools and platforms like Hugging Face, Streamlit, and GenAI. Eager to contribute to innovative web and AI development projects.
+</p>
+
+<ul class="about-info mt-4 px-md-0 px-2">
+  <li class="d-flex">
+    <span>Profile:</span>
+    <span>Full Stack Developer</span>
+  </li>
+  <li class="d-flex">
+    <span>Domain:</span>
+    <span>Software Development / AI</span>
+  </li>
+  <li class="d-flex">
+    <span>Education:</span>
+    <span>Bachelor in Computer Science and Engineering</span>
+  </li>
+  <li class="d-flex">
+    <span>Languages:</span>
+    <span>English, Hindi</span>
+  </li>
+  <li class="d-flex">
+    <span>Other Skills:</span>
+    <span>Observational skills, Creativity, Technical proficiency, Communication, Time management, Adaptability, Attention to detail</span>
+  </li>
+  <li class="d-flex">
+    <span>AI / Tools:</span>
+    <span>Hugging Face, Streamlit, GenAI</span>
+  </li>
+  <li class="d-flex">
+    <span>Interests:</span>
+    <span>Traveling, Learning new technologies</span>
+  </li>
+</ul>
+
+                </div>
+              </div>
+
+              <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                <div class="text">
+                  <!-- <p class="mb-4"> <span class="number" data-number="30">0</span> <span>+</span> <span>&nbsp; Projects completed</span> </p> -->
+                  <p>
+                    <a href="https://www.linkedin.com/in/kartik-narwal/" class="btn btn-primary py-3 px-3">LinkedIn</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+    
+
+   <div class="row justify-content-center pb-5">
+  <div class="col-md-10 text-center heading-section ftco-animate">
+    <h1 class="big-4">Achievements</h1>
+    <div class="underline mx-auto"></div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <div class="resume-wrap ftco-animate">
+      <span class="date">Feb 2025 - Jul 2025</span>
+      <h2>Full Stack and DevOps Intern</h2>
+      <span class="position">Ipothesis Research Private Limited (Research Portal Project)</span>
+      <ul class="mt-4">
+        <li>Developed a research portal using the MERN Stack.</li>
+        <li>Automated deployment using CI/CD pipelines.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="resume-wrap ftco-animate">
+      <span class="date">Oct 2023 - May 2024</span>
+      <h2>Full Stack and GenAI Intern</h2>
+      <span class="position">Bennett University (IITI DRISHTI CPS Foundation Project)</span>
+      <br/>
+      <span class="position">Link: <a href="https://drive.google.com/file/d/1cD4oxmwUgrxJ5LTyycgQ5nPkdstoWeuZ/view?usp=sharing" target="_blank">Project</a></span>
+      <ul class="mt-4">
+        <li>Collaborated with a team of 6 members to build a coding learning portal.</li>
+        <li>Integrated AI-based assistance to help students understand coding concepts more deeply.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-md-6 mt-4">
+    <div class="resume-wrap ftco-animate">
+      <span class="date">Nov 2024 - Dec 2025</span>
+      <h2>Certified Ethical Hacker</h2>
+      <span class="position">Cleared CEH Certification conducted by EC-Council</span>
+      <br/>
+      <span class="position">Link: <a href="https://drive.google.com/file/d/1fL2hJCQ6G4rXJWtW5fkljJOXaNqw3wAV/view?usp=sharing" target="_blank">Certificate</a></span>
+      <ul class="mt-4">
+        <li>Successfully completed the CEH program.</li>
+        <li>Gained expertise in ethical hacking, network security, and vulnerability assessment.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+    <section class="ftco-section ftco-no-pb" id="projects-section">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Projects</h2>
+        <p>Here are some of the projects I have worked on, showcasing my skills in full-stack development, cloud integration, and practical problem-solving.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <h1 class="big-4">My Work</h1>
+      <div class="underline"></div>
+    </div>
+    <br>
+
+    <div class="row">
+      <!-- Project Template Start -->
+      <!-- Repeat this block for 10 projects -->
+
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <img src="images/BrainFrame.png" alt="BrainFrame" class="img-fluid mb-3">
+          <h2>BrainFrame</h2>
+          <span class="position">GitHub: <a href="https://github.com/kartiknarwal/Quick_ai" target="_blank">Link</a> | Live: <a href="https://brainframe.vercel.app/" target="_blank">Link</a></span>
+          <p class="mt-4">
+                  Multi-functional AI toolkit that helps users generate images, review resumes, remove backgrounds or objects, and create content such as articles and blog titles. Built with modern web technologies and integrated multiple AI APIs for a seamless experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <img src="images/TravelJ.png" alt="TravelJ" class="img-fluid mb-3">
+          <h2>TravelJ</h2>
+          <span class="position">GitHub: <a href="https://github.com/kartiknarwal/Traveller_J" target="_blank">Link</a> | Live: <a href="https://traveller-j.vercel.app/" target="_blank">Link</a></span>
+          <p class="mt-4">
+                  AI-based travel planner that generates personalized itineraries with hotels, places to visit, and budget options. Learned API integration, JSON parsing, and building a responsive front-end with React and Tailwind CSS.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <img src="images/e-learn.png" alt="e-learning" class="img-fluid mb-3">
+          <h2>NextZenLearn</h2>
+          <span class="position">GitHub: <a href="https://github.com/kartiknarwal/elearning-frontend" target="_blank">Link</a> | Live: <a href="https://elearning-kartiknarwal.vercel.app/" target="_blank">Link</a></span>
+          <p class="mt-4">
+            E-learning platform for students to browse and purchase courses. Gained experience with APIs, payment integration, and advanced CSS techniques.
+          </p>
+        </div>
+      </div>
+
+      
+      <!-- 2 -->
+             <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <img src="images/HostelMedia.jpg" alt="HostelMedia" class="img-fluid mb-3">
+          <h2>HostelMedia</h2>
+          <span class="position">GitHub: <a href="https://github.com/kartiknarwal/hostel_media" target="_blank">Link</a> | Live: <a href="https://hostel-media.onrender.com/" target="_blank">Link</a></span>
+          <p class="mt-4">
+            MERN-based social networking app to chat, share posts, and upload reels and pictures.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+             <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <img src="images/Gemini_clone.png" alt="Gemini_clone" class="img-fluid mb-3">
+          <h2>OrbitSearch</h2>
+          <span class="position">GitHub: <a href="https://github.com/kartiknarwal/Gemin_clone" target="_blank">Link</a> | Live: <a href="https://gemini-bot-clone-by-narwal.netlify.app/" target="_blank">Link</a></span>
+          <p class="mt-4">
+          A sleek web tool for fast and efficient information discovery.
+          </p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+             <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <img src="images/github.png" alt="github" class="img-fluid mb-3">
+          <h2>GitScout</h2>
+          <span class="position">GitHub: <a href="https://github.com/kartiknarwal/github_profile_searcher" target="_blank">Link</a> | Live: <a href="https://gitghub-searcher-profile.netlify.app/" target="_blank">Link</a></span>
+          <p class="mt-4">
+            Web app to search GitHub users and explore their repositories.
+          </p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+             <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <img src="images/gym-mern.png" alt="gym" class="img-fluid mb-3">
+          <h2>MyGymHub</h2>
+          <span class="position">GitHub: <a href="https://github.com/kartiknarwal/gym-frontend" target="_blank">Link</a> | Live: <a href="https://narwal-desi-fitness.netlify.app/" target="_blank">Link</a></span>
+          <p class="mt-4">
+            Gym site to check BMI and connect with owners, boosting local gyms.
+          </p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+             <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <img src="images/toDoweb.png" alt="toDoweb" class="img-fluid mb-3">
+          <h2>TaskMate</h2>
+          <span class="position">GitHub: <a href="https://github.com/kartiknarwal/toDoWebApp" target="_blank">Link</a> | Live: <a href="https://hustlemanager.netlify.app/" target="_blank">Link</a></span>
+          <p class="mt-4">
+            Task manager web app to add, track, and save daily tasks locally in the browser.
+          </p>
+        </div>
+      </div>
+   <!-- 7 -->
+          <!-- <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <img src="images/textvoice.png" alt="textvoice" class="img-fluid mb-3">
+          <h2>Project Name</h2>
+          <span class="position">GitHub: <a href="github_link" target="_blank">Link</a> | Live: <a href="live_link" target="_blank">Link</a></span>
+          <p class="mt-4">
+            Short description about the project goes here. Mention technologies used and main features.
+          </p>
+        </div>
+      </div> -->
+     <!-- 8 -->
+            <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <img src="images/real-time.png" alt="real-time" class="img-fluid mb-3">
+          <h2>LiveCoder</h2>
+          <span class="position">GitHub: <a href="https://github.com/kartiknarwal/realtime_code_editor" target="_blank">Link</a> | Live: <a href="https://realtime-code-editor-3-zw8e.onrender.com/" target="_blank">Link</a></span>
+          <p class="mt-4">
+            Collaborate and execute code instantly across screens
+          </p>
+        </div>
+      </div>
+     <!-- 9 -->
+            <!-- <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <img src="images/notes-saving.png" alt="notes-saving" class="img-fluid mb-3">
+          <h2>Project Name</h2>
+          <span class="position">GitHub: <a href="github_link" target="_blank">Link</a> | Live: <a href="live_link" target="_blank">Link</a></span>
+          <p class="mt-4">
+            Short description about the project goes here. Mention technologies used and main features.
+          </p>
+        </div>
+      </div>
+ -->
+      <!-- Project Template End -->
+
+      <!-- You can duplicate the above div for all 10 projects -->
+    </div>
+  </div>
+</section>
+
+    <!-- <section class="ftco-section" id="project-section"> <div class="container"> <div class="row justify-content-center mb-5 pb-5"> <div class="col-md-7 heading-section text-center ftco-animate"> <h1 class="big big-2">Projects</h1> <h2 class="mb-4">Projects</h2> <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p> </div> </div> <div class="row d-flex"> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a> </h3> <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a> </h3> <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry"> <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a> </h3> <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p> </div> </div> </div> </div> <br> <div class="row d-flex justify-content-center"> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a> </h3> <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p> </div> </div> </div> <div class="col-md-4 d-flex ftco-animate"> <div class="blog-entry justify-content-end"> <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a> <div class="text mt-3 float-right d-block"> <h3 class="heading"> <a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb">Customer Segmentation using clustering model</a> </h3> <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p> </div> </div> </div> </div> </div> </section> -->
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="hid" style="visibility:hidden">
+        <div class="container">
+          <div class="row d-md-flex align-items-center">
+            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="5">0</strong>
+                  <span>Achievements</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="55">0</strong>
+                  <span>GitHub Repositories</span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="1000">0</strong> <span>Mentored Students</span> </div> </div> </div> <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="500">0</strong> <span>Cups of coffee</span> </div> </div> </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+        <!-- <div class="container"> -->
+        <div class="row justify-content-center">
+          <div class="col-md-7 ftco-animate text-center">
+            <h2>Here's my<span>
+                <button id="gitbtn" class="btn btn-primary py-3 px-5" onclick="gitClick()">GitHub</button>
+              </span>
+            </h2>
+            <div class="heading">
+              <h4>
+                I love to code &amp; create awesome webpages.
+              </h4>
+              <br>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-map-signs"></span>
+              </div>
+              <h3 class="mb-4">Address</h3>
+              <p>Sonipat,Haryana</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-phone2"></span>
+              </div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p>
+                <a href="tel://9306717141">+91 9306717141</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-paper-plane"></span>
+              </div>
+              <h3 class="mb-4">Email Address</h3>
+              <p>
+                <a href="mailto:kartiknarwal2085@gmail.com">kartiknarwal2085@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-globe"></span>
+              </div>
+              <h3 class="mb-4">Download Resume</h3>
+              <p>
+                <a href="https://drive.google.com/file/d/1a3L6fpWF53OGCuBsjZ3vsl6v61BxMbaX/view?usp=sharing">resumelink</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="container">
+            <br>
+            <br>
+            <div class="row justify-content-center">
+              <div class="col-md-7 ftco-animate text-center">
+                <h2>Have a<span>
+                    Question?
+                  </span>
+                </h2>
+               <div class="que" id="send-message">
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <!-- Replace this value with your own clean access key from Web3Forms -->
+    <input type="hidden" name="access_key" value="e460ddbb-ab39-4289-ac7a-77693873413d">
+
+    <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+      <div class="col-12">
+        <label for="fullname" class="form-label">Full Name
+          <span class="text-danger">*</span>
+        </label>
+        <input type="text" class="form-control" id="fullname" name="fullname" required>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label for="email" class="form-label">Email
+          <span class="text-danger">*</span>
+        </label>
+        <div class="input-group">
+          <span class="input-group-text">
+            <!-- Envelope icon SVG -->
+          </span>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <label for="phone" class="form-label">Phone Number</label>
+        <div class="input-group">
+          <span class="input-group-text">
+            <!-- Phone icon SVG -->
+          </span>
+          <input type="tel" class="form-control" id="phone" name="phone">
+        </div>
+      </div>
+
+      <div class="col-12">
+        <label for="subject" class="form-label">Subject
+          <span class="text-danger">*</span>
+        </label>
+        <input type="text" class="form-control" id="subject" name="subject" required>
+      </div>
+
+      <div class="col-12">
+        <label for="message" class="form-label">Message
+          <span class="text-danger">*</span>
+        </label>
+        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+      </div>
+
+      <div class="col-12">
+        <div class="d-grid mt-3">
+          <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+              </div>
+            </div>
+            <br>
+            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+              <li class="ftco-animate normal-txt">Find me on
+              </li>
+              <!-- <li class="ftco-animate"> <a href="https://www.youtube.com/@RishabhMishraOfficial"> <span class="icon-youtube"></span></a> </li> -->
+              <li class="ftco-animate">
+                <a href="https://www.linkedin.com/in/kartik-narwal/">
+                  <span class="icon-linkedin"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="">
+                  <span class="icon-twitter"></span></a>
+              </li>
+              <!-- <li class="ftco-animate"> <a href="https://twitter.com/rishabhnmishra"> <span class="icon-facebook"></span></a> </li> -->
+              <li class="ftco-animate">
+                <a href="https://www.instagram.com/narwal._kartik/">
+                  <span class="icon-instagram"></span></a>
+              </li>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </section>
+
+      <footer class="ftco-footer ftco-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+
+              <p style="display: none;">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="icon-heart color-danger" aria-hidden="true"></i>
+                by
+                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- loader -->
+      <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+          <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+          <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg>
+      </div>
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/scrollax.min.js"></script>
+
+      <script src="js/main.js"></script>
+      <script>
+        function gitClick() {
+          window.location.href = 'https://github.com/kartiknarwal';
+        }
+      </script>
+
+
+        <div class="cursor"></div>
+<script>
+  const trailCount = 6; // number of trail dots
+  const trails = [];
+
+  for (let i = 0; i < trailCount; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('trail');
+    document.body.appendChild(dot);
+    trails.push(dot);
+  }
+
+  let mouse = { x: 0, y: 0 };
+  let positions = Array(trailCount).fill({ x: 0, y: 0 });
+
+  document.addEventListener('mousemove', e => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+  });
+
+  function animate() {
+    positions.reduce((prev, pos, index) => {
+      const dx = mouse.x - pos.x;
+      const dy = mouse.y - pos.y;
+      pos.x += dx * 0.3; // smooth movement
+      pos.y += dy * 0.3;
+      trails[index].style.transform = `translate(${pos.x}px, ${pos.y}px)`;
+      return pos;
+    }, { x: mouse.x, y: mouse.y });
+    requestAnimationFrame(animate);
+  }
+  animate();
+</script>
+How it works:
+
+
+
+    </body>
+
+
+    
+
+  </html>
